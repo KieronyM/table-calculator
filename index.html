@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>5 - Table Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+        <tr>
+            <td colspan="4">
+                <input type="number" id="screen" value="">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="digitPressed(1)"></td>
+            <td><input type="button" value="2" onclick="digitPressed(2)"></td>
+            <td><input type="button" value="3" onclick="digitPressed(3)"></td>
+            <td><input type="button" value="+" onclick="operator('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="digitPressed(4)"></td>
+            <td><input type="button" value="5" onclick="digitPressed(5)"></td>
+            <td><input type="button" value="6" onclick="digitPressed(6)"></td>
+            <td><input type="button" value="-" onclick="operator('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="digitPressed(7)"></td>
+            <td><input type="button" value="8" onclick="digitPressed(8)"></td>
+            <td><input type="button" value="9" onclick="digitPressed(9)"></td>
+            <td><input type="button" value="x" onclick="operator('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="digitPressed(0)"></td>
+            <td><input type="button" value="C" class="red white-text" onclick="clearScreen()"></td>
+            <td><input type="button" value="=" id="button=" onclick="calculate()" disabled></td>
+            <td><input type="button" value="÷" onclick="operator('/')"></td>
+        </tr>
+    </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
